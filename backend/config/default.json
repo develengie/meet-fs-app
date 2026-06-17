@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "mongoUri": "mongodb+srv://develengie:elpf4SwZdi9WkdjI@app.n7fm8li.mongodb.net/?appName=app",
+  "accessTokenSecretKey": "access token secret key",
+  "refreshTokenSecretKey": "refresh token secret key"
+}

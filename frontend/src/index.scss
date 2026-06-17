@@ -1,0 +1,123 @@
+:root {
+    --black-light: rgba(34, 34, 34, 1);
+    --black-dark: rgba(20, 20, 20, 1);
+    --blue: rgba(22, 120, 255, 1);
+    --gray-light: rgba(237, 238, 240, 1);
+    --gray-dark: rgba(0, 0, 0, .04);
+
+    --comment-background-color: var(--gray-dark);
+    --comment-border-color: var(--gray-dark);
+    --link-color: var(--blue);
+    --loader-color: var(--blue);
+    --primary-background-color: white;
+    --secondary-background-color: var(--gray-light);
+    --text-color: black;
+    --theme-button-background-color: var(--black-dark);
+    --theme-button-color: white;
+
+    --font-size: 1.6rem;
+    --header-height: 8.5rem;
+}
+
+[data-theme="dark"] {
+    --comment-background-color: var(--black-light);
+    --comment-border-color: white;
+    --link-color: white;
+    --loader-color: white;
+    --primary-background-color: var(--black-dark);
+    --secondary-background-color: var(--black-light);
+    --text-color: white;
+    --theme-button-background-color: white;
+    --theme-button-color: var(--black-dark);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+
+    background-color: var(--primary-background-color);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: var(--font-size);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.form {
+    margin-bottom: 3rem;
+
+    &--mb {
+        margin-bottom: 0;
+    }
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+}
+
+.link {
+    position: relative;
+
+    color: var(--link-color);
+    text-decoration: none;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 1px;
+
+        background-color: currentColor;
+        opacity: 0;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+
+        transform: translateY(8px);
+        transition: opacity .2s linear, transform .2s linear;
+    }
+
+    &.active::after,
+    &:hover:not(.active)::after {
+        opacity: 1;
+
+        transform: translateY(4px);
+    }
+}
+
+.text-center {
+    text-align: center;
+
+    &--mt {
+        margin-top: 3rem;
+    }
+}

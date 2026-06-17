@@ -1,0 +1,47 @@
+.comment {
+    padding: 1rem;
+    position: relative;
+
+    background-color: var(--comment-background-color);
+    border: 1px solid var(--comment-border-color);
+    border-radius: 6px;
+}
+
+.comment__inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: var(--text-color);
+}
+
+.comment__image {
+    display: block;
+    width: 7.5rem;
+    height: 7.5rem;
+
+    border-radius: 50%;
+}
+
+.comment__name {
+    margin-bottom: 7.5px;
+}
+
+.comment__button {
+    display: inline-block;
+    padding: 0;
+
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+
+    &:focus {
+        outline: none;
+    }
+}
