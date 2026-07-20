@@ -1,0 +1,15 @@
+.dropdown__menu {
+    display: flex;
+    align-items: center;
+
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.dropdown__menu-image {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+}

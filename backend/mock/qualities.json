@@ -1,0 +1,16 @@
+[
+  { "_id": "67rdca3eeb7f6fgeed471198", "name": "Нудила", "color": "magenta" },
+  {
+    "_id": "67rdca3eeb7f6fgeed471100",
+    "name": "Странный",
+    "color": "volcano"
+  },
+  { "_id": "67rdca3eeb7f6fgeed4711012", "name": "Троль", "color": "gold" },
+  { "_id": "67rdca3eeb7f6fgeed471101", "name": "Алкоголик", "color": "green" },
+  { "_id": "67rdca3eeb7f6fgeed471102", "name": "Красавчик", "color": "blue" },
+  {
+    "_id": "67rdca3eeb7f6fgeed471103",
+    "name": "Неуверенный",
+    "color": "purple"
+  }
+]

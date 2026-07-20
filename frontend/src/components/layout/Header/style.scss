@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--secondary-background-color);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
